@@ -1,0 +1,8 @@
+@use "../../variables" as s;
+
+.button-main {
+  padding: 10px 15px;
+  background-color: s.$pink;
+  border: none;
+  color: s.$white;
+}

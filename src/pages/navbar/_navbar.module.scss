@@ -1,0 +1,74 @@
+@use "../../variables" as s;
+
+.mobile-navigation {
+  background-color: s.$black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+
+  img {
+    height: 40px;
+  }
+}
+
+.navigation {
+  display: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: s.$white;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: s.$pink;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-navigation {
+    display: none;
+    background-color: aqua;
+  }
+
+  .navigation {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    background-color: s.$black;
+    position: fixed;
+    width: 100%;
+
+    ul {
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 100px;
+    }
+
+    img {
+      height: 70px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  nav {
+    ul {
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      align-items: center;
+      top: 60px;
+      left: 0;
+      background-color: s.$black;
+      border-top: 2px solid s.$pink;
+      height: 250px;
+      width: 100%;
+      padding: 20px 0;
+    }
+  }
+}
