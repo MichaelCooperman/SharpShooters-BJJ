@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../main.module.css";
+import classes from "../../src/main.module.css";
 
 const HomeTwo = (props) => {
   const { programImg, programImgAlt, programType, programExtra, programDesc } =

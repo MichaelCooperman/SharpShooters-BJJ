@@ -1,0 +1,39 @@
+@use "../../variables" as s;
+
+.footer-container {
+  background-color: s.$black;
+  padding: 10px;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h4,
+  h5 {
+    color: s.$white;
+  }
+
+  h5 {
+    margin-bottom: 20px;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+
+  h5 {
+    color: s.$white;
+  }
+
+  img {
+    width: 75px;
+    margin-bottom: 10px;
+  }
+}

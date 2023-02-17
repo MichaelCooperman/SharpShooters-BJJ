@@ -20,3 +20,50 @@
     padding: 0px 20px;
   }
 }
+
+.instructor-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0px;
+
+  img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  hr {
+    height: 5px;
+  }
+}
+
+.program-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}

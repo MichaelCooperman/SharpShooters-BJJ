@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/footer/Footer";
 import HomeBottom from "./HomeBottom";
 import HomeMid from "./HomeMid";
 import HomeTop from "./HomeTop";
@@ -11,7 +12,7 @@ const Home = () => {
       <HomeMid />
       <HomeBottom />
       <Testimonials />
-      {/* <Footer /> */}
+      <Footer />
     </section>
   );
 };
