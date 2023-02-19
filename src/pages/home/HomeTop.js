@@ -1,8 +1,8 @@
 import React from "react";
 import classes from "../../main.module.css";
-import ButtonSign from "../../components/buttons/ButtonSign";
+import ButtonPop from "../../components/buttons/ButtonPop";
 
-const HomeTop = () => {
+const HomeTop = (props) => {
   return (
     <div>
       <div className={classes["home-top-container"]}>
@@ -10,7 +10,7 @@ const HomeTop = () => {
           <h1>SHARP SHOOTERS</h1>
           <h3>GRAPPLING CLUB</h3>
         </div>
-        <ButtonSign buttonText="SIGN UP FOR A TRIAL HERE" />
+        <ButtonPop onClick={props.onOpen} btnText="SIGN UP FOR A TRIAL HERE" />
       </div>
     </div>
   );

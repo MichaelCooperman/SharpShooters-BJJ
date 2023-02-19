@@ -92,6 +92,9 @@ h3 {
   }
 }
 .main-containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
@@ -134,13 +137,14 @@ h3 {
   margin-bottom: 20px;
 }
 .home-mid-one p {
-  margin-bottom: 20px;
+  margin: 0 20px 20px 20px;
 }
 
 .home-programs {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
 }
 .home-programs div hr {
   width: 40px;
@@ -227,6 +231,10 @@ h3 {
   background-position: center;
 }
 
+.sign-button {
+  padding-bottom: 20px;
+}
+
 .schedule-top-container {
   display: flex;
   height: 100vh;
@@ -238,6 +246,10 @@ h3 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+
+.schedule-text {
+  text-align: center;
 }
 
 .contact-top-container {
@@ -253,15 +265,76 @@ h3 {
   background-position: center;
 }
 
-.button-main {
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 750px;
+}
+.contact-form textarea,
+.contact-form input {
+  box-sizing: border-box;
+}
+.contact-form input {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  background-color: #d9d9d9;
+}
+.contact-form ::-moz-placeholder {
+  color: black;
+}
+.contact-form ::placeholder {
+  color: black;
+}
+.contact-form textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #d9d9d9;
+}
+
+.button-more {
   padding: 10px 15px;
   background-color: rgba(250, 124, 208, 0.8156862745);
   border: none;
   color: white;
+  text-decoration: none;
+}
+
+.button-sub {
+  padding: 10px 20px;
+  margin: 20px 0;
+  width: 140px;
+  background-color: rgba(250, 124, 208, 0.8156862745);
+  border: 2px solid black;
+  color: white;
 }
 
 .home-one {
-  padding: 20px 0px;
+  padding: 20px 10px;
 }
 
 .home-two {
@@ -352,4 +425,69 @@ h3 {
 .footer-bottom img {
   width: 75px;
   margin-bottom: 10px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 20vh;
+  left: 5%;
+  width: 90%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+}
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.popup-container img {
+  height: 30px;
+}
+
+.popup-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup-top h1 {
+  font-size: 1rem;
+}
+.popup-top button {
+  border: none;
+  background-color: white;
+}
+
+.popup-header {
+  padding: 20px 0;
+  text-align: center;
+}
+.popup-header p {
+  margin-top: 10px;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=main.module.css.map */

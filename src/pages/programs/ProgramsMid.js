@@ -5,10 +5,15 @@ import ProgramsBJJImg from "../../images/Programs-img1.png";
 import ProgramsWrestlingImg from "../../images/Programs-img2.png";
 import ProgramsKidsClassImg from "../../images/Programs-img3.png";
 import ProgramsYogaImg from "../../images/Programs-img4.png";
+import ButtonPop from "../../components/buttons/ButtonPop";
 
-const ProgramsMid = () => {
+const ProgramsMid = (props) => {
   return (
     <div className={classes["main-containers"]}>
+      <div className={classes["sign-button"]}>
+        <ButtonPop onClick={props.onOpen} btnText="SIGN UP FOR A TRIAL HERE" />
+      </div>
+
       <ProgramsOne
         ProgramsImg={ProgramsBJJImg}
         ProgramsImgAlt="ProgramsBJJ-img"

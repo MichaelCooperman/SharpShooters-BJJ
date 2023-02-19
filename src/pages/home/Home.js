@@ -5,10 +5,10 @@ import HomeMid from "./HomeMid";
 import HomeTop from "./HomeTop";
 import Testimonials from "./Testimonials";
 
-const Home = () => {
+const Home = (props) => {
   return (
     <section>
-      <HomeTop />
+      <HomeTop onOpen={props.onPopup} />
       <HomeMid />
       <HomeBottom />
       <Testimonials />

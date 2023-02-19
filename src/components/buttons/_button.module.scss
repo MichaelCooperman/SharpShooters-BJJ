@@ -1,8 +1,18 @@
 @use "../../variables" as s;
 
-.button-main {
+.button-more {
   padding: 10px 15px;
   background-color: s.$pink;
   border: none;
+  color: s.$white;
+  text-decoration: none;
+}
+
+.button-sub {
+  padding: 10px 20px;
+  margin: 20px 0;
+  width: 140px;
+  background-color: s.$pink;
+  border: 2px solid s.$black;
   color: s.$white;
 }

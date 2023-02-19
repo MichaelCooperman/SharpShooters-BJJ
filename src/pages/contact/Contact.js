@@ -3,11 +3,11 @@ import Footer from "../../components/footer/Footer";
 import ContactMid from "./ContactMid";
 import ContactTop from "./ContactTop";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <section>
       <ContactTop />
-      <ContactMid />
+      <ContactMid onOpen={props.onPopup} />
       <Footer />
     </section>
   );

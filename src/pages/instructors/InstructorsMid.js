@@ -5,10 +5,12 @@ import InstImg1 from "../../images/Instructor-img1.jpg";
 import InstImg2 from "../../images/Instructor-img2.jpg";
 import InstImg3 from "../../images/Instructor-img3.jpg";
 import InstImg4 from "../../images/Instructor-img4.jpg";
+import ButtonPop from "../../components/buttons/ButtonPop";
 
-const InstructorsMid = () => {
+const InstructorsMid = (props) => {
   return (
     <div className={classes["main-containers"]}>
+      <ButtonPop onClick={props.onOpen} btnText="SIGN UP FOR A TRIAL HERE" />
       <InstructorsOne
         InstructorImg={InstImg1}
         InstructorImgAlt="MIKE-img"

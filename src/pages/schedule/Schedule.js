@@ -3,11 +3,11 @@ import Footer from "../../components/footer/Footer";
 import ScheduleMid from "./ScheduleMid";
 import ScheduleTop from "./ScheduleTop";
 
-const Schedule = () => {
+const Schedule = (props) => {
   return (
     <section>
       <ScheduleTop />
-      <ScheduleMid />
+      <ScheduleMid onOpen={props.onPopup} />
       <Footer />
     </section>
   );

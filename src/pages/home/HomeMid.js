@@ -1,5 +1,4 @@
 import React from "react";
-import ButtonSign from "../../components/buttons/ButtonSign";
 import HomeOne from "../../components/HomeOne";
 import classes from "../../main.module.css";
 import { FaUserFriends } from "react-icons/fa";
@@ -13,6 +12,7 @@ import KidsClassesImg from "../../images/Kids-Classes-image.png";
 import YogaImg from "../../images/Yoga-image.png";
 import TopicBG from "../../images/Topic-Background-image.png";
 import TopicImg from "../../images/Topic-image.png";
+import ButtonMore from "../../components/buttons/ButtonMore";
 
 const HomeMid = () => {
   return (
@@ -31,7 +31,7 @@ const HomeMid = () => {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <ButtonSign buttonText="Read More" />
+          <ButtonMore buttonText="Read More" />
         </div>
         <div className={classes["home-mid-two"]}>
           <HomeOne
@@ -95,7 +95,7 @@ const HomeMid = () => {
           programExtra="Dinosaur"
           programDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
-        <ButtonSign buttonText="READ MORE ABOUT CLASSES" />
+        <ButtonMore buttonText="READ MORE ABOUT CLASSES" />
         <div className={classes["topic-container"]}>
           <img
             className={classes["topic-img-1"]}

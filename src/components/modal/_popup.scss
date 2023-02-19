@@ -1,0 +1,32 @@
+@use "../../variables" as s;
+
+.popup-container {
+  img {
+    height: 30px;
+  }
+}
+
+.popup-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  button {
+    border: none;
+    background-color: s.$white;
+  }
+}
+
+.popup-header {
+  padding: 20px 0;
+  text-align: center;
+
+  p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+}

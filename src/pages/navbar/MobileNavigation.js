@@ -26,12 +26,14 @@ const MobileNavigation = () => {
     />
   );
 
+  const closeMobileMenu = () => setOpen(false);
+
   return (
     <nav className={classes["mobile-navigation"]}>
       <img className={classes.logo} src={logo} alt="logo.png" />
       <h2>Sharp Shooters</h2>
       {open ? closedHamburger : openHamburger}
-      {open && <NavLinks />}
+      {open && <NavLinks isMobile={true} claseMobileMenu={closeMobileMenu} />}
     </nav>
   );
 };
