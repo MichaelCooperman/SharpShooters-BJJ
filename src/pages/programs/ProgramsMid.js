@@ -13,31 +13,32 @@ const ProgramsMid = (props) => {
       <div className={classes["sign-button"]}>
         <ButtonPop onClick={props.onOpen} btnText="SIGN UP FOR A TRIAL HERE" />
       </div>
-
-      <ProgramsOne
-        ProgramsImg={ProgramsBJJImg}
-        ProgramsImgAlt="ProgramsBJJ-img"
-        ProgramsTitle="BRAZILIAN JIUJITSU"
-        ProgramsDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. In ornare quam viverra orci sagittis eu."
-      />
-      <ProgramsOne
-        ProgramsImg={ProgramsWrestlingImg}
-        ProgramsImgAlt="ProgramsWrestling-img"
-        ProgramsTitle="WRESTLING"
-        ProgramsDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. In ornare quam viverra orci sagittis eu."
-      />
-      <ProgramsOne
-        ProgramsImg={ProgramsKidsClassImg}
-        ProgramsImgAlt="ProgramsKidsClass-img"
-        ProgramsTitle="KIDS CLASSES"
-        ProgramsDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. In ornare quam viverra orci sagittis eu."
-      />
-      <ProgramsOne
-        ProgramsImg={ProgramsYogaImg}
-        ProgramsImgAlt="ProgramsYoga-img"
-        ProgramsTitle="YOGA CRAP"
-        ProgramsDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. In ornare quam viverra orci sagittis eu."
-      />
+      <div className={classes["programs-container"]}>
+        <ProgramsOne
+          ProgramsImg={ProgramsBJJImg}
+          ProgramsImgAlt="ProgramsBJJ-img"
+          ProgramsTitle="BRAZILIAN JIUJITSU"
+          ProgramsDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. In ornare quam viverra orci sagittis eu."
+        />
+        <ProgramsOne
+          ProgramsImg={ProgramsWrestlingImg}
+          ProgramsImgAlt="ProgramsWrestling-img"
+          ProgramsTitle="WRESTLING"
+          ProgramsDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. In ornare quam viverra orci sagittis eu."
+        />
+        <ProgramsOne
+          ProgramsImg={ProgramsKidsClassImg}
+          ProgramsImgAlt="ProgramsKidsClass-img"
+          ProgramsTitle="KIDS CLASSES"
+          ProgramsDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. In ornare quam viverra orci sagittis eu."
+        />
+        <ProgramsOne
+          ProgramsImg={ProgramsYogaImg}
+          ProgramsImgAlt="ProgramsYoga-img"
+          ProgramsTitle="YOGA CRAP"
+          ProgramsDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu. Enim sit amet venenatis urna cursus eget nunc scelerisque viverra. In ornare quam viverra orci sagittis eu."
+        />
+      </div>
     </div>
   );
 };

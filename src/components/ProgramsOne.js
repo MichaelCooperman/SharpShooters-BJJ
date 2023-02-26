@@ -6,8 +6,10 @@ const ProgramsOne = (props) => {
 
   return (
     <div className={classes["program-cards"]}>
-      <img src={ProgramsImg} alt={ProgramsImgAlt} />
-      <div>
+      <div className={classes["program-img"]}>
+        <img src={ProgramsImg} alt={ProgramsImgAlt} />
+      </div>
+      <div className={classes["program-info"]}>
         <h3>{ProgramsTitle}</h3>
         <p>{ProgramsDesc}</p>
       </div>

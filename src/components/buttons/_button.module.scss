@@ -16,3 +16,32 @@
   border: 2px solid s.$black;
   color: s.$white;
 }
+
+.button-join {
+  padding: 10px 20px;
+  margin: 20px 0;
+  width: 140px;
+  background-color: s.$pink;
+  border: none;
+  color: s.$white;
+}
+
+.sign-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .sign-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .button-more {
+    padding: 10px 50px;
+  }
+}

@@ -12,8 +12,10 @@ const InstructorsOne = (props) => {
 
   return (
     <div className={classes["instructor-cards"]}>
-      <img src={InstructorImg} alt={InstructorImgAlt} />
-      <div>
+      <div className={classes["instructor-img"]}>
+        <img src={InstructorImg} alt={InstructorImgAlt} />
+      </div>
+      <div className={classes["instructor-info"]}>
         <h3>{InstructorName}</h3>
         <p>{InstructorDesc}</p>
         <hr color={InstructorColor} />

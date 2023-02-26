@@ -4,8 +4,10 @@
 .main-containers {
   display: flex;
   flex-direction: column;
+  max-width: 1440px;
   align-items: center;
   padding: 20px;
+  width: 100%;
 }
 
 ////////////////////////////////// HOME TOP ///////////////////////////
@@ -13,8 +15,9 @@
 .home-top-container {
   display: flex;
   height: 100vh;
+  max-width: 1440px;
+  width: 100%;
   flex-direction: column;
-  background-color: red;
   justify-content: center;
   align-items: center;
   background-image: url("./images/Home-Top-Background.jpg");
@@ -30,6 +33,7 @@
   padding: 10px 2px;
   margin-bottom: 10px;
   width: 80%;
+  max-width: 500px;
 
   h1 {
     color: s.$black;
@@ -43,6 +47,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 
 .home-mid-one {
@@ -51,7 +56,12 @@
     margin-bottom: 20px;
   }
 
+  h3 {
+    padding: 0 40px 10px 40px;
+  }
+
   p {
+    padding: 0 10px;
     margin: 0 20px 20px 20px;
   }
 }
@@ -79,27 +89,37 @@
 
   div {
     padding: 20px;
-    background-color: s.$grey;
 
     h3 {
       margin-bottom: 20px;
     }
   }
 
-  .topic-img-1 {
-    width: 100%;
-  }
-}
+  .topic-low {
+    max-width: 100%;
 
-.topic-img {
-  width: 100%;
+    .topic-img {
+      max-width: 100%;
+    }
+  }
+
+  .topic-img-1 {
+    max-width: 100%;
+  }
+
+  .topic-box {
+    background-color: s.$grey;
+    margin-bottom: 20px;
+  }
 }
 
 //////////////////////////// HOME BOTTOM //////////////////////////
 
 .home-bottom-container {
   background-color: s.$black;
-  padding: 20px 10px;
+  padding: 40px 10px 20px 10px;
+  max-width: 1440px;
+  width: 100%;
 }
 
 .home-bottom {
@@ -128,4 +148,159 @@
 .space-img {
   width: 49%;
   margin-bottom: 5px;
+}
+
+//////////////////////////// MEDIA Q'S //////////////////////////
+
+@media (min-width: 768px) {
+  .home-welcome {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-mid-one {
+    max-width: 500px;
+    align-self: center;
+  }
+
+  .home-mid-two {
+    display: flex;
+  }
+
+  .home-programs {
+    h1 {
+      font-size: 3rem;
+    }
+
+    div {
+      hr {
+        width: 90px;
+        height: 11px;
+        margin: 10px;
+        background-color: black;
+        border-radius: 2px;
+        border: none;
+      }
+    }
+  }
+
+  .home-programs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .topic-img {
+    width: 350px;
+  }
+
+  .space-images {
+    padding: 10px 10px 0 10px;
+  }
+
+  .space-img {
+    margin-bottom: 10px;
+  }
+
+  .topic-low {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+  }
+
+  .topic-container {
+    .topic-box {
+      width: 300px;
+      margin-bottom: 70px;
+    }
+  }
+
+  .topic-img {
+    margin-top: 110px;
+    width: 350px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-welcome {
+    flex-direction: row;
+  }
+
+  .home-mid-one {
+    align-self: flex-start;
+    text-align: start;
+
+    h3 {
+      font-size: 2.5rem;
+      padding: 0 0 10px 30px;
+    }
+
+    div {
+      margin: 20px 0 0 150px;
+    }
+  }
+
+  .home-programs {
+    h1 {
+      font-size: 5rem;
+    }
+
+    div {
+      hr {
+        width: 100px;
+        height: 15px;
+        margin: 20px 20px;
+        background-color: black;
+        border-radius: 2px;
+        border: none;
+      }
+    }
+  }
+
+  .topic-container {
+    .topic-box {
+      width: 375px;
+      padding: 20px 30px;
+      margin-bottom: 90px;
+
+      h3 {
+        font-size: 3rem;
+        padding: none;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .topic-img {
+    margin-top: 80px;
+    width: 400px;
+    z-index: 1;
+  }
+
+  .space-top {
+    display: flex;
+
+    p {
+      padding: 0 30px;
+      text-align: start;
+      font-size: 1.2rem;
+    }
+
+    .space-1-img {
+      width: 60%;
+    }
+  }
+
+  .space-img {
+    width: 23%;
+  }
+
+  .space-images {
+    justify-content: space-around;
+  }
 }

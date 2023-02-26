@@ -1,9 +1,12 @@
+@use "../variables" as s;
+
 .home-one {
-  padding: 20px 10px;
+  padding: 20px 20px;
 }
 
 .home-two {
   padding: 20px 0px;
+  max-width: 320px;
 
   img {
     width: 320px;
@@ -25,10 +28,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 20px 0px;
 
   img {
+    border: 3px solid s.$pink;
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -40,6 +45,7 @@
   }
 
   p {
+    // text-align: start;
     margin-bottom: 20px;
   }
 
@@ -53,6 +59,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;
+
+  .program-info {
+    padding: 20px;
+  }
 
   img {
     width: 100%;
@@ -64,6 +75,263 @@
   }
 
   p {
+    // text-align: start;
     margin-bottom: 20px;
+  }
+}
+
+.slider-center {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 80vw;
+  height: 450px;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+.lastSlide {
+  transform: translateX(-100%);
+}
+.nextSlide {
+  transform: translateX(100%);
+}
+
+@media (min-width: 768px) {
+  .program-cards {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+
+    img {
+      max-width: 280px;
+    }
+  }
+
+  .program-info {
+    width: 300px;
+    // background-color: red;
+  }
+
+  .instructor-cards {
+    flex-direction: row;
+    margin: 10px;
+
+    .instructor-img {
+      margin-right: 50px;
+    }
+
+    .instructor-info {
+      padding: 0 10px 0 40px;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .home-two {
+    margin: 0 10px;
+  }
+}
+
+.slider-center {
+  margin: 0;
+  display: flex;
+  width: 80vw;
+  height: 450px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+article {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+  width: 100%;
+}
+article.lastSlide {
+  transform: translateX(-100%);
+}
+article.nextSlide {
+  transform: translateX(100%);
+}
+
+.person-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+article h4 {
+  // text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+  margin-bottom: 16px;
+}
+
+article h5 {
+  font-size: 2rem;
+  font-family: s.$mainFont;
+}
+
+.title {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.text {
+  max-width: 35em;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 435px;
+  transform: translateY(-50%);
+  background: s.$black;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: transparent;
+  font-size: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.prev:hover,
+.next:hover {
+  background: s.$pink;
+}
+.prev {
+  left: 35%;
+}
+.next {
+  right: 35%;
+}
+
+@media (min-width: 768px) {
+  article h5 {
+    font-size: 2.5rem;
+  }
+
+  .slider-center {
+    align-items: center;
+  }
+
+  .text {
+    max-width: 500px;
+    margin-top: 1rem;
+  }
+
+  .prev,
+  .next {
+    top: 250px;
+  }
+
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+
+  .title {
+    margin-bottom: 0.75rem;
+  }
+
+  .title {
+    margin-bottom: 1rem;
+    h2 {
+      font-weight: 500;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h4 {
+      margin-right: 50px;
+    }
+  }
+
+  .program-info {
+    width: 500px;
+  }
+
+  .slider-center {
+    height: 300px;
+    width: 900px;
+    max-width: 900px;
+  }
+
+  .person-img {
+    margin-right: 50px;
+  }
+
+  .prev,
+  .next {
+    top: 150px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  article h4 {
+    margin-right: 75px;
+  }
+
+  article h5 {
+    font-size: 3rem;
+  }
+
+  .slider-center {
+    width: 1000px;
+    max-width: 1000px;
+  }
+
+  .program-info {
+    width: 600px;
+  }
+
+  .person-img {
+    margin-right: 75px;
+  }
+
+  .text {
+    max-width: 35em;
+  }
+
+  .instructor-info {
+    max-width: 700px;
   }
 }

@@ -21,13 +21,19 @@ const HomeBottom = () => {
             <hr />
           </div>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
-          volutpat consequat mauris nunc. Eu consequat ac felis donec et odio
-          pellentesque diam.
-        </p>
-        <img className={classes["space-1-img"]} src={Space1} alt="Space1-img" />
+        <div className={classes["space-top"]}>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
+            volutpat consequat mauris nunc. Eu consequat ac felis donec et odio
+            pellentesque diam.
+          </p>
+          <img
+            className={classes["space-1-img"]}
+            src={Space1}
+            alt="Space1-img"
+          />
+        </div>
         <div className={classes["space-images"]}>
           <img className={classes["space-img"]} src={Space2} alt="Space2-img" />
           <img className={classes["space-img"]} src={Space3} alt="Space3-img" />

@@ -13,8 +13,9 @@ const ContactMid = (props) => {
             btnText="SIGN UP FOR A TRIAL HERE"
           />
         </div>
+
         <h3>CONTACT US OR STOP BY IN PERSON!</h3>
-        <h4>
+        <h4 className={classes["contact-para"]}>
           We are so excited to hear from you. Please fill out a form below if
           you have any questions, comments, concerns, or ideas. We will get back
           to you as soon as we can!
@@ -53,10 +54,10 @@ const ContactMid = (props) => {
               rows="10"
             ></textarea>
             <ButtonSubmit btnTxt="SUBMIT" />
-            <div>
+            {/* <div>
               <h3>DROPPING IN? FILL OUT WAIVER</h3>
               <ButtonSubmit btnTxt="SIGN WAIVER" />
-            </div>
+            </div> */}
           </form>
         </div>
       </div>

@@ -1,6 +1,8 @@
 .instructors-top-container {
   display: flex;
   height: 100vh;
+  width: 100%;
+  max-width: 1440px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -9,4 +11,10 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+
+@media (min-width: 768px) {
+  .instructors-container {
+    padding: 0 50px;
+  }
 }

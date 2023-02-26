@@ -7,6 +7,8 @@
 }
 
 main {
+  display: flex;
+  justify-content: center;
   min-width: 320px;
 }
 
@@ -15,20 +17,46 @@ ul {
   list-style: none;
 }
 
-// section {
-//   background-color: yellowgreen;
-// }
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
+.section-black {
+  background-color: s.$black;
+}
 
 h1 {
   font-size: 2rem;
   color: s.$black;
+  font-family: s.$mainFont;
 }
 
 h2 {
   font-size: 1.8rem;
   color: s.$white;
+  font-family: s.$mainFont;
 }
 
 h3 {
   font-size: 1.6rem;
+  font-family: s.$mainFont;
+}
+
+button,
+a {
+  font-family: s.$mainFont;
+  font-size: 1.1rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+textarea,
+input {
+  font-family: s.$mainFont;
 }

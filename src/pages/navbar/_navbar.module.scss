@@ -2,12 +2,13 @@
 
 .mobile-navigation {
   background-color: s.$black;
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px;
   width: 100%;
   position: fixed;
+  z-index: 10;
 
   img {
     height: 40px;
@@ -22,6 +23,7 @@
   text-decoration: none;
   color: s.$white;
   font-size: 1.2rem;
+  font-family: s.$mainFont;
 
   &:hover {
     color: s.$pink;
@@ -31,16 +33,18 @@
 @media (min-width: 1024px) {
   .mobile-navigation {
     display: none;
-    background-color: aqua;
   }
 
   .navigation {
     display: flex;
-    padding: 15px;
+    align-items: center;
+    padding: 15px 20px;
     justify-content: space-between;
     background-color: s.$black;
     position: fixed;
     width: 100%;
+    max-width: 1440px;
+    z-index: 10;
 
     ul {
       width: 100%;
@@ -52,6 +56,10 @@
     img {
       height: 70px;
     }
+  }
+
+  .nav-link {
+    font-size: 1.3rem;
   }
 }
 

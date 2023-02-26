@@ -2,10 +2,10 @@ import React from "react";
 import MobileNavigation from "./MobileNavigation";
 import Navigation from "./Navigation";
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
     <React.Fragment>
-      <Navigation />
+      <Navigation onOpen={props.onPopup} />
       <MobileNavigation />
     </React.Fragment>
   );

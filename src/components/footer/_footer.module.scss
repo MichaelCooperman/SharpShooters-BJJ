@@ -1,14 +1,24 @@
 @use "../../variables" as s;
 
+.footer-section {
+  width: 100%;
+}
+
 .footer-container {
   background-color: s.$black;
   padding: 10px;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .footer-top {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h4 {
+    font-size: 1.4rem;
+  }
 
   h4,
   h5 {
@@ -35,5 +45,25 @@
   img {
     width: 75px;
     margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-top {
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    margin-top: 0;
+
+    .home-logo {
+      width: 350px;
+    }
   }
 }

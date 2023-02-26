@@ -22,7 +22,7 @@ const App = () => {
   return (
     <main>
       {popupIsShown && <PopUp onClose={hidePopupHandler} />}
-      <NavBar />
+      <NavBar onPopup={showPopupHandler} />
       <Routes>
         <Route exact path="/" element={<Home onPopup={showPopupHandler} />} />
         <Route
