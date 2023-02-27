@@ -33,15 +33,50 @@
   padding-bottom: 20px;
 }
 
+.button-scroll {
+  position: fixed;
+  left: 83%;
+  bottom: 40px;
+  height: 20px;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  color: s.$pink;
+}
+
+@media (min-width: 375px) {
+  .button-scroll {
+    left: 85%;
+  }
+}
+
+@media (min-width: 425px) {
+  .button-scroll {
+    left: 87%;
+  }
+}
+
 @media (min-width: 768px) {
   .sign-button {
     display: flex;
     justify-content: flex-end;
+  }
+  .button-scroll {
+    left: 92%;
   }
 }
 
 @media (min-width: 1024px) {
   .button-more {
     padding: 10px 50px;
+  }
+  .button-scroll {
+    left: 94%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .button-scroll {
+    left: 96%;
   }
 }

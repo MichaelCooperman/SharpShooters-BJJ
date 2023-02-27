@@ -180,11 +180,8 @@ input {
 .home-mid-one h2 {
   margin-bottom: 20px;
 }
-.home-mid-one h3 {
-  padding: 0 40px 10px 40px;
-}
 .home-mid-one p {
-  padding: 0 10px;
+  padding: 10px 0;
   margin: 0 20px 20px 20px;
 }
 
@@ -325,7 +322,6 @@ input {
     margin-bottom: 20px;
   }
   .home-mid-row img {
-    display: flex;
     width: 40%;
   }
   .home-mid-one {
@@ -391,14 +387,15 @@ input {
   }
   .topic-low {
     justify-content: space-around;
+    height: 250px;
   }
   .topic-container .topic-box {
     width: 425px;
     padding: 30px 40px;
   }
   .topic-container .topic-img {
-    width: 450px;
-    margin: 60px 0 0;
+    width: 475px;
+    margin: 90px 0 0;
   }
 }
 .instructors-top-container {
@@ -579,15 +576,47 @@ input {
   padding-bottom: 20px;
 }
 
+.button-scroll {
+  position: fixed;
+  left: 83%;
+  bottom: 40px;
+  height: 20px;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  color: rgba(250, 124, 208, 0.8156862745);
+}
+
+@media (min-width: 375px) {
+  .button-scroll {
+    left: 85%;
+  }
+}
+@media (min-width: 425px) {
+  .button-scroll {
+    left: 87%;
+  }
+}
 @media (min-width: 768px) {
   .sign-button {
     display: flex;
     justify-content: flex-end;
   }
+  .button-scroll {
+    left: 92%;
+  }
 }
 @media (min-width: 1024px) {
   .button-more {
     padding: 10px 50px;
+  }
+  .button-scroll {
+    left: 94%;
+  }
+}
+@media (min-width: 1440px) {
+  .button-scroll {
+    left: 96%;
   }
 }
 .home-one {

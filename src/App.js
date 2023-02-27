@@ -7,6 +7,7 @@ import Schedule from "./pages/schedule/Schedule";
 import Contact from "./pages/contact/Contact";
 import NavBar from "./pages/navbar/NavBar";
 import PopUp from "./components/modal/PopUp";
+import ButtonScroll from "./components/buttons/ButtonScroll";
 
 const App = () => {
   const [popupIsShown, setPopupIsShown] = useState(false);
@@ -46,6 +47,7 @@ const App = () => {
           element={<Contact onPopup={showPopupHandler} />}
         />
       </Routes>
+      <ButtonScroll />
     </main>
   );
 };
