@@ -150,6 +150,12 @@
   margin-bottom: 5px;
 }
 
+.home-mid-row {
+  img {
+    display: none;
+  }
+}
+
 //////////////////////////// MEDIA Q'S //////////////////////////
 
 @media (min-width: 768px) {
@@ -165,6 +171,7 @@
 
   .home-mid-two {
     display: flex;
+    justify-content: center;
   }
 
   .home-programs {
@@ -224,8 +231,15 @@
 }
 
 @media (min-width: 1024px) {
-  .home-welcome {
-    flex-direction: row;
+  .home-mid-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+    img {
+      display: flex;
+      width: 40%;
+    }
   }
 
   .home-mid-one {
@@ -302,5 +316,27 @@
 
   .space-images {
     justify-content: space-around;
+  }
+}
+
+@media (min-width: 1440px) {
+  .home-mid-two {
+    justify-content: space-around;
+  }
+
+  .topic-low {
+    justify-content: space-around;
+  }
+
+  .topic-container {
+    .topic-box {
+      width: 425px;
+      padding: 30px 40px;
+    }
+
+    .topic-img {
+      width: 450px;
+      margin: 60px 0 0;
+    }
   }
 }

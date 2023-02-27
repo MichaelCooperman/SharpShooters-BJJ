@@ -19,20 +19,23 @@ const HomeMid = () => {
     <div className={classes["main-containers"]}>
       <div className={classes["home-mid-container"]}>
         <div className={classes["home-welcome"]}>
-          <div className={classes["home-mid-one"]}>
-            <h3>WELCOME TO THE CLUB</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <div>
-              <ButtonMore buttonText="Read More" />
+          <div className={classes["home-mid-row"]}>
+            <div className={classes["home-mid-one"]}>
+              <h3>WELCOME TO THE CLUB</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <div>
+                <ButtonMore buttonText="Read More" />
+              </div>
             </div>
+            <img src={TopicImg} alt="home-top-img" />
           </div>
           <div className={classes["home-mid-two"]}>
             <div>
