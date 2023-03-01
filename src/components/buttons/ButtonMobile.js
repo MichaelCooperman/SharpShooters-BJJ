@@ -1,34 +1,32 @@
 import React, { useState } from "react";
-import { HiArrowUpCircle } from "react-icons/hi2";
+// import { MdAssignment } from "react-icons/md";
 import classes from "../../main.module.css";
 
-const ButtonMobile = () => {
+const ButtonMobile = (props) => {
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 1000) {
+    if (scrolled > 0) {
       setVisible(true);
-    } else if (scrolled <= 1000) {
+    } else if (scrolled <= 0) {
       setVisible(false);
     }
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
   };
 
   window.addEventListener("scroll", toggleVisible);
 
   return (
-    <div className={classes["button-scroll"]}>
-      <HiArrowUpCircle
-        onClick={scrollToTop}
-        style={{ display: visible ? "inline" : "none" }}
-      />
+    <div
+      onClick={props.onPopup}
+      style={{ display: visible ? "inline" : "none" }}
+      className={classes["button-mobile"]}
+    >
+      <div>
+        JO
+        <br />
+        IN
+      </div>
     </div>
   );
 };

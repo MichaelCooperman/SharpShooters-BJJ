@@ -8,6 +8,7 @@ import Contact from "./pages/contact/Contact";
 import PopUp from "./components/modal/PopUp";
 import ButtonScroll from "./components/buttons/ButtonScroll";
 import Header from "./pages/navbar/Header";
+import ButtonMobile from "./components/buttons/ButtonMobile";
 
 const App = () => {
   const [popupIsShown, setPopupIsShown] = useState(false);
@@ -47,6 +48,7 @@ const App = () => {
           element={<Contact onPopup={showPopupHandler} />}
         />
       </Routes>
+      <ButtonMobile onPopup={showPopupHandler} />
       <ButtonScroll />
     </main>
   );

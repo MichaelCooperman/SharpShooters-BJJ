@@ -43,6 +43,35 @@
   cursor: pointer;
   color: s.$pink;
 }
+
+.button-mobile {
+  position: fixed;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: s.$pink;
+  right: 83%;
+  bottom: 15px;
+  height: 39px;
+  width: 39px;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  z-index: 1;
+  cursor: pointer;
+  color: s.$white;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    // margin-top: 4px;
+    // margin-left: 2px;
+  }
+}
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .animated-button {
@@ -257,11 +286,17 @@
   .button-scroll {
     left: 85%;
   }
+  .button-mobile {
+    right: 85%;
+  }
 }
 
 @media (min-width: 425px) {
   .button-scroll {
     left: 87%;
+  }
+  .button-mobile {
+    right: 87%;
   }
 }
 
@@ -273,6 +308,9 @@
   .button-scroll {
     left: 92%;
   }
+  .button-mobile {
+    right: 92%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -282,16 +320,25 @@
   .button-scroll {
     left: 94%;
   }
+  .button-mobile {
+    right: 94%;
+  }
 }
 
 @media (min-width: 1440px) {
   .button-scroll {
     left: 96%;
   }
+  .button-mobile {
+    right: 96%;
+  }
 }
 
 @media (min-width: 2560px) {
   .button-scroll {
     left: 76%;
+  }
+  .button-mobile {
+    right: 76%;
   }
 }
