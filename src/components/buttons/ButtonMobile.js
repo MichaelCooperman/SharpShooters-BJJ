@@ -22,11 +22,7 @@ const ButtonMobile = (props) => {
       style={{ display: visible ? "inline" : "none" }}
       className={classes["button-mobile"]}
     >
-      <div>
-        JO
-        <br />
-        IN
-      </div>
+      <div>JOIN</div>
     </div>
   );
 };

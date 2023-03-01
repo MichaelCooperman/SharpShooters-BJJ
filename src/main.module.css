@@ -630,6 +630,7 @@ textarea {
   height: 100%;
   font-family: "Jockey One", sans-serif;
   line-height: 15px;
+  margin-left: 1px;
 }
 
 .animated-button {
