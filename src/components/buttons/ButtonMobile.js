@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { HiArrowUpCircle } from "react-icons/hi2";
 import classes from "../../main.module.css";
 
-const ButtonScroll = () => {
+const ButtonMobile = () => {
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 500) {
+    if (scrolled > 1000) {
       setVisible(true);
-    } else if (scrolled <= 500) {
+    } else if (scrolled <= 1000) {
       setVisible(false);
     }
   };
@@ -33,4 +33,4 @@ const ButtonScroll = () => {
   );
 };
 
-export default ButtonScroll;
+export default ButtonMobile;

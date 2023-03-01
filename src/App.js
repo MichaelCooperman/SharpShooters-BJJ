@@ -5,9 +5,9 @@ import Instructors from "./pages/instructors/Instructors";
 import Programs from "./pages/programs/Programs";
 import Schedule from "./pages/schedule/Schedule";
 import Contact from "./pages/contact/Contact";
-import NavBar from "./pages/navbar/NavBar";
 import PopUp from "./components/modal/PopUp";
 import ButtonScroll from "./components/buttons/ButtonScroll";
+import Header from "./pages/navbar/Header";
 
 const App = () => {
   const [popupIsShown, setPopupIsShown] = useState(false);
@@ -23,7 +23,7 @@ const App = () => {
   return (
     <main>
       {popupIsShown && <PopUp onClose={hidePopupHandler} />}
-      <NavBar onPopup={showPopupHandler} />
+      <Header onPopup={showPopupHandler} />
       <Routes>
         <Route exact path="/" element={<Home onPopup={showPopupHandler} />} />
         <Route

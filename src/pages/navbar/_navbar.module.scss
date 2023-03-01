@@ -1,5 +1,19 @@
 @use "../../variables" as s;
 
+.header-section {
+  display: flex;
+  justify-content: center;
+  height: 115px;
+  border-bottom: 1px solid s.$black;
+  background: s.$black;
+  position: fixed;
+  z-index: 10;
+
+  div {
+    max-width: 1440px;
+  }
+}
+
 .mobile-navigation {
   background-color: s.$black;
   display: flex;

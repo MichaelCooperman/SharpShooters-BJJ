@@ -5,7 +5,14 @@ const ButtonMore = (props) => {
   const { buttonText } = props;
 
   return (
-    <a href="programs" className={classes["button-more"]}>
+    // <a href="programs" className={classes["button-more"]}>
+    //   {buttonText}
+    // </a>
+    <a href="programs" className={classes["animated-button"]}>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
       {buttonText}
     </a>
   );
