@@ -628,6 +628,8 @@ textarea {
   align-items: center;
   width: 100%;
   height: 100%;
+  font-family: "Jockey One", sans-serif;
+  line-height: 15px;
 }
 
 .animated-button {
@@ -758,6 +760,11 @@ textarea {
     right: 92%;
   }
 }
+@media (min-width: 1023px) {
+  .button-mobile {
+    display: none;
+  }
+}
 @media (min-width: 1024px) {
   .button-more {
     padding: 10px 50px;
@@ -765,24 +772,15 @@ textarea {
   .button-scroll {
     left: 94%;
   }
-  .button-mobile {
-    right: 94%;
-  }
 }
 @media (min-width: 1440px) {
   .button-scroll {
     left: 96%;
   }
-  .button-mobile {
-    right: 96%;
-  }
 }
 @media (min-width: 2560px) {
   .button-scroll {
     left: 76%;
-  }
-  .button-mobile {
-    right: 76%;
   }
 }
 .home-one {
