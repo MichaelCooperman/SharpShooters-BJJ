@@ -90,8 +90,8 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  // -webkit-box-shadow: 0 20px 10px rgba(0, 0, 0, 0.5);
+  // box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
 .animated-button::before {
@@ -316,7 +316,7 @@
 }
 @media (min-width: 1023px) {
   .button-mobile {
-    display: none;
+    visibility: hidden;
   }
 }
 

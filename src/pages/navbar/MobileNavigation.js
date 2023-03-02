@@ -30,7 +30,9 @@ const MobileNavigation = () => {
 
   return (
     <nav className={classes["mobile-navigation"]}>
-      <img className={classes.logo} src={logo} alt="logo.png" />
+      <a href="/">
+        <img className={classes.logo} src={logo} alt="logo.png" />
+      </a>
       <h2>Sharp Shooters</h2>
       {open ? closedHamburger : openHamburger}
       {open && <NavLinks isMobile={true} claseMobileMenu={closeMobileMenu} />}

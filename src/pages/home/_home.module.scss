@@ -163,6 +163,7 @@
   .home-mid-one {
     max-width: 500px;
     align-self: center;
+    margin: auto;
   }
 
   .home-mid-two {
@@ -233,7 +234,9 @@
     margin-bottom: 20px;
 
     img {
+      display: flex;
       width: 40%;
+      padding-right: 40px;
     }
   }
 
