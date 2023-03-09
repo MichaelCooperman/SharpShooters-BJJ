@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useRef } from "react";
 import ButtonPop from "../../components/buttons/ButtonPop";
 import ButtonSubmit from "../../components/buttons/ButtonSubmit";
 import classes from "../../main.module.css";
+import emailjs from "@emailjs/browser";
 
 const ContactMid = (props) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_89kgjki",
+        "template_9gwn3i8",
+        form.current,
+        "K-P0Lrcjx9aic3gfj"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <div className={classes["main-containers"]}>
       <div className={classes["contact-container"]}>
@@ -22,23 +46,27 @@ const ContactMid = (props) => {
         </h4>
         <div className={classes.contact}>
           <h2 className={classes["contact-title"]}>Contact Me</h2>
-          <form className={classes["contact-form"]}>
+          <form
+            ref={form}
+            className={classes["contact-form"]}
+            onSubmit={sendEmail}
+          >
             <input
               type="text"
               placeholder="First Name"
-              name="user_first_name"
+              name="user_firstName"
               required
             />
             <input
               type="text"
               placeholder="Last Name"
-              name="user_last_name"
+              name="user_lastName"
               required
             />
             <input
               type="number"
               placeholder="Phone Number"
-              name="user_phone_number"
+              name="user_phone"
               required
             />
             <input
@@ -54,10 +82,6 @@ const ContactMid = (props) => {
               rows="10"
             ></textarea>
             <ButtonSubmit btnTxt="SUBMIT" />
-            {/* <div>
-              <h3>DROPPING IN? FILL OUT WAIVER</h3>
-              <ButtonSubmit btnTxt="SIGN WAIVER" />
-            </div> */}
           </form>
         </div>
       </div>

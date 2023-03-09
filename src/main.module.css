@@ -1,3 +1,4 @@
+@import url("https://cdn.syncfusion.com/ej2.material.css");
 * {
   margin: 0;
   padding: 0;
@@ -486,9 +487,14 @@ textarea {
   align-items: center;
 }
 
-@media (min-width: 1024px) {
+.schedule-img {
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
   .schedule-container p {
-    max-width: 80%;
+    max-width: 60%;
   }
 }
 .contact-top-container {
@@ -915,7 +921,7 @@ textarea {
   margin: 0;
   display: flex;
   width: 80vw;
-  height: 450px;
+  height: 575px;
   text-align: center;
   position: relative;
   display: flex;
@@ -976,7 +982,7 @@ article h5 {
 .prev,
 .next {
   position: absolute;
-  top: 435px;
+  top: 555px;
   transform: translateY(-50%);
   background: black;
   color: #fff;
@@ -1166,7 +1172,7 @@ article h5 {
 
 .modal {
   position: fixed;
-  top: 10vh;
+  top: 25vh;
   left: 5%;
   width: 90%;
   max-height: 80vh;

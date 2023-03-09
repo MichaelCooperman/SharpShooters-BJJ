@@ -1,6 +1,7 @@
 import React from "react";
 import ButtonPop from "../../components/buttons/ButtonPop";
 import classes from "../../main.module.css";
+import scheduleImg from "../../images/SharpShooters-Schedule-Image.jpg";
 
 const ScheduleMid = (props) => {
   return (
@@ -13,14 +14,17 @@ const ScheduleMid = (props) => {
           />
         </div>
         <p className={classes["schedule-text"]}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Here at Sharp Shooters we are open 24/7, except national holidays. See
+          the schedule below for further details on when our classes are. We
+          look forward to seeing you in one of upcoming classes!
         </p>
+      </div>
+      <div>
+        <img
+          className={classes["schedule-img"]}
+          src={scheduleImg}
+          alt="schedule-img"
+        />
       </div>
     </div>
   );

@@ -23,10 +23,17 @@ const HomeBottom = () => {
         </div>
         <div className={classes["space-top"]}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
-            volutpat consequat mauris nunc. Eu consequat ac felis donec et odio
-            pellentesque diam.
+            Sharp Shooters has a brand new gym opening up this summer! Stocked
+            with the best available equipment on the market. Opening with a
+            massive BJJ matting section enough for 100 people to be
+            participating at once. Along with that there are 2 changing rooms, 2
+            bathrooms and a sauna! As for weights we have up to 150lb dumbells
+            and up to 100lb plates. Our space is for everyone to use. We now
+            have a indoor basketball room and pool room. Sharp Shooters gym will
+            be open all day and night. We have allocated more than enough room
+            for parking so that will never have to be a thought when coming to
+            our gym. If you are looking for one of the best gyms in the area
+            this is the spot! Sign up now online and enroll today!
           </p>
           <img
             className={classes["space-1-img"]}

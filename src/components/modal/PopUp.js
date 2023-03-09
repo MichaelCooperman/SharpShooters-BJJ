@@ -1,11 +1,35 @@
-import React from "react";
+import React, { useRef } from "react";
 import Modal from "../../UI/Modal";
 import classes from "../../main.module.css";
 import logo from "../../images/SharpShootersLogo.png";
 import { AiOutlineClose } from "react-icons/ai";
 import ButtonSubmit from "../buttons/ButtonSubmit";
+import emailjs from "@emailjs/browser";
 
 const PopUp = (props) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_89kgjki",
+        "template_9gwn3i8",
+        form.current,
+        "K-P0Lrcjx9aic3gfj"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <Modal onClose={props.onClose}>
       <div className={classes["popup-container"]}>
@@ -21,30 +45,33 @@ const PopUp = (props) => {
           </button>
         </div>
         <div className={classes["popup-header"]}>
-          {/* <h4>SIGN UP FOR YOUR FREE TRIAL TODAY!</h4> */}
           <p>
             The staff here would love to set you or your children up with a free
             tiral week. Sign up today!
           </p>
         </div>
         <div className={classes.contact}>
-          <form className={classes["contact-form"]}>
+          <form
+            ref={form}
+            className={classes["contact-form"]}
+            onSubmit={sendEmail}
+          >
             <input
               type="text"
               placeholder="First Name"
-              name="user_first_name"
+              name="user_firstName"
               required
             />
             <input
               type="text"
               placeholder="Last Name"
-              name="user_last_name"
+              name="user_lastName"
               required
             />
             <input
               type="number"
               placeholder="Phone Number"
-              name="user_phone_number"
+              name="user_phone"
               required
             />
             <input

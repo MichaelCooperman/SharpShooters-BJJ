@@ -23,13 +23,12 @@ const HomeMid = () => {
             <div className={classes["home-mid-one"]}>
               <h3>WELCOME TO THE CLUB</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Whether you’re new to fitness or an accomplished athlete, our
+                coaches are highly trained and certified to help you set goals,
+                teach proper form to prevent injury, and design training
+                programs that include basic barbell exercises, Brazilian Jiu
+                Jitsu, wrestling, gymnastics, and a long list of bodyweight
+                movements.
               </p>
               <div>
                 <ButtonMore buttonText="Read More" />
@@ -41,24 +40,24 @@ const HomeMid = () => {
             <div>
               <HomeOne
                 title="MAKE FRIENDS"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                desc="Getting fit should be FUN, varied, and done with friends. There is power in being part of a community of like-minded individuals that supports us, shares our experiences, and celebrates our successes."
                 image={<FaUserFriends size="100px" />}
               />
               <HomeOne
                 title="GET IN SHAPE"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                desc="Whether you're looking to just be fit for life, or reignite your competitive fire, we are experienced at providing solutions to meet you where you are with your health and fitness and get you the results you deserve."
                 image={<GiWeightLiftingUp size="100px" />}
               />
             </div>
             <div>
               <HomeOne
                 title="COMPETE"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                desc="Show your competitive side. Looking to show off your BJJ, Wrestling, or Gymnastic skills this is the place for you! We compete all country wide and have some the of most high ranking competitions. "
                 image={<AiOutlineTrophy size="100px" />}
               />
               <HomeOne
                 title="GET CREATIVE"
-                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                desc="There's no one right way to training. Your goals are unique, which is why we offer a variety of program options. Whether you're looking to just get fit, get strong, or fuel your competitive fire, we have a program for you. "
                 image={<HiOutlineLightBulb size="100px" />}
               />
             </div>
@@ -82,28 +81,28 @@ const HomeMid = () => {
             programImgAlt="BJJ-Img"
             programType="BRAZILIAN JIU JITSU"
             programExtra="Gi and No Gi"
-            programDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            programDesc="A predominantly ground-based martial art, using the principals of leverage, angles, pressure and timing, as well as knowledge of the human anatomy, in order to achieve a non-violent submission of one's opponent."
           />
           <HomeTwo
             programImg={WrestlingImg}
             programImgAlt="Wrestling-Img"
             programType="WRESTLING"
             programExtra="Styles"
-            programDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            programDesc=" Sport practiced in various styles by two competitors, involving forcing an opponent to touch the ground with some part of the body other than his feet; forcing him into a certain position, usually supine (on his back); or holding him in that position for a minimum length of time."
           />
           <HomeTwo
             programImg={KidsClassesImg}
             programImgAlt="Kid-Classes-Img"
             programType="KIDS CLASSSES"
             programExtra="Gi and No Gi"
-            programDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            programDesc="A form of martial arts that offers many mental and physical health benefits for kids. If you are looking for a fun activity to build your child's development, look no further than BJJ. You'll see your kids' Jiu-Jitsu benefits in no time."
           />
           <HomeTwo
             programImg={YogaImg}
-            programImgAlt="Yoga-Img"
-            programType="YOGA OR SOMETHING"
-            programExtra="Dinosaur"
-            programDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            programImgAlt="Gymnastics-Img"
+            programType="Gymnastics"
+            programExtra="Yoga"
+            programDesc="A type of sport that includes physical exercises requiring balance, strength, flexibility, agility, coordination, and endurance. The movements involved in gymnastics contribute to the development of the arms, legs, shoulders, back, chest, and abdominal muscle groups."
           />
         </div>
         <ButtonMore buttonText="READ MORE ABOUT CLASSES" />
